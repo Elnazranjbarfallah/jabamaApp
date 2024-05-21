@@ -1,0 +1,11 @@
+1- create jbm database
+
+2- create person table
+
+3- create Customer entity
+
+4- create CustomerDa (save,edit,remove,find_all, find_by_id,find_by)
+
+3- create Owner entity
+
+5- create OwnerDa (save,edit,remove,find_all, find_by_id,find_by)
