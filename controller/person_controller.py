@@ -6,8 +6,8 @@ from model.tools.decorators import exception_handling
 class PersonController:
     @staticmethod
     @exception_handling
-    def save(name, family, status=True):
-        person = Person(None, name, family, status)
+    def save(name, family, role):
+        person = Person( name, family, role)
         return True, PersonBl.save(person)
 
     @staticmethod
