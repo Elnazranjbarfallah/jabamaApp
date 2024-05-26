@@ -1,6 +1,5 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from model.entity import *
 
-from jabama.model.entity.base import Base
 
 class Person(Base):
     __tablename__ = "person"
@@ -12,10 +11,12 @@ class Person(Base):
     status = Column(Boolean, default=True)
 
 
-    def __init__(self, id, name, family,city, role, status=True):
-        self.id = id
-        self.name = name
-        self.family = family
-        self.city = city
-        self.role = role
-        self.status = status
+    # def __init__(self, id, name, family,city, role, status=True):
+    #     self.id = id
+    #     self.name = name
+    #     self.family = family
+    #     self.city = city
+    #     self.role = role
+    #     self.status = status
+
+    # todo : getter / setter (validation)
