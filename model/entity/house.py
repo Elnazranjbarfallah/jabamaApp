@@ -1,3 +1,4 @@
+import re
 from model.entity import *
 
 
@@ -33,7 +34,7 @@ class House(Base):
          self.owner_id = owner_id
          self.owner = owner
 
-    # todo : getter / setter (validation)
+
     @property
     def id(self):
         return self._id
@@ -109,31 +110,32 @@ class House(Base):
             raise ValueError("invalid number of rooms format")
 
 
-@property
-def price(self):
-    return self._price
-@price.setter
-def price(price):
-    if not price > 1000000000 and price < 100:
-        return price
-    else:
-        return ValueError("invalid price format")
+    @property
+    def price(self):
+        return self._price
+    @price.setter
+    def price(self, price):
+        if not price > 1000000000 and price < 100:
+            self._price = price
+        else:
+            return ValueError("invalid price format")
 
 
-@property
-def owner_id(self):
-    return self._owner_id
-@owner_id.setter
-def owner_id(self, owner_id):
-    if re.match("^[0-9_ \s]+$", owner_id):
-        self._owner_id = owner_id
-    else:
-        raise ValueError("invalid owner_id")
+    @property
+    def owner_id(self):
+        return self._owner_id
+    @owner_id.setter
+    def owner_id(self, owner_id):
+        if re.match("^[0-9_ \s]+$", owner_id):
+            self._owner_id = owner_id
+        else:
+            raise ValueError("invalid owner_id")
 
     @property
     def owner(self):
         return self._owner
-    @owner_id.setter
+
+    @owner.setter
     def owner(self, owner):
         if re.match(r"^[A-Za-z\s]+$", name, re.I):
             self._owner = owner

@@ -44,3 +44,16 @@ class DataAccess:
     def find_by(self, find_statement):
         entity = session.query(self.class_name).filter(find_statement).all()
         return entity
+
+    def find_by_employee_id(self, owner_id):
+        entity = session.get(self.class_name, owner_id)
+        return entity
+
+    def find_by_customer_id(self, house_id):
+        entity = session.get(self.class_name, house_id)
+        return entity
+
+    def find_by_device_id(self, renter_id):
+        entity = session.get(self.class_name, renter_id)
+        return entity
+
