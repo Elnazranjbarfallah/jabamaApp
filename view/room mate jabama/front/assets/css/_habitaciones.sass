@@ -1,0 +1,108 @@
+.header-black
+	background: rgba(5, 5, 5, 0.8)
+	height: 100px
+.main-habitaciones
+	width: 100%
+	height: auto
+	padding-top: 150px
+	padding-left: 60px
+	padding-right: 60px
+	padding-bottom: 30px
+	+f-column-center()
+	h5
+		font-size: 2.7rem
+		font-weight: bold
+		color: rgb(71,71,71)
+	span
+		color: #F64C4C
+		letter-spacing: 2px
+		font-weight: 300
+		font-size: 1.2rem
+		font-family: 'Poppins'
+		font-style: normal
+		font-weight: 100
+	.contenedor-habitaciones
+		+f-row()
+		flex-wrap: wrap
+		margin-top: 30px
+		.habitaciones-card
+			padding: 0 15px
+			padding-bottom: 20px
+			width: 300px
+			max-width: 300px
+			height: 500px
+			max-height: 80%
+			+f-cl-end()
+			margin: 20px
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			position: relative
+			transition: all .5s ease
+			border-radius: 5px
+			&::before
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				width: 100%
+				height: auto
+				z-index: 1
+				background-color: rgba(0, 0, 0, 0.2)
+				transition: all .5s ease
+			&:hover
+				&::before
+					content: ""
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+					width: 100%
+					height: auto
+					z-index: 1
+					background-color: rgba(0, 0, 0, 0.5)
+				.box-hidden
+						height: auto
+						p
+							transform: translateY(0%)
+			.box-hidden
+				height: 40px
+				overflow-y: hidden
+				transition: all .5s ease
+				h3
+				color: #fff
+				font-size: 1.5rem
+				font-family: 'Poppins', sans-serif
+				margin-bottom: 5px
+				font-weight: 600
+				p
+					transform: translateY(100%)
+					font-size: 1rem
+					transition: all .5s ease
+					font-weight: 100
+		.card1
+			background-image: url('../img/habitaciones/Balmes, 109/1 salon - Copy.jpg')	
+		.card2
+			background-position: center !important
+			background-image: url('../img/habitaciones/Botella/coc-2.jpg')
+		.card3
+			background-position: bottom !important
+			background-image: url('../img/habitaciones/Diagonal/ha15.jpg')
+		.card4
+			background-position: top !important
+			background-image: url('../img/habitaciones/Ronda Universitat/14.jpg')
+		.card5
+			background-position: top !important
+			background-image: url('../img/habitaciones/SANTA MADRONA/BPS-HD-6.jpg')
+		.card6
+
+			background-image: url('../img/habitaciones/TAMARIT/main.jpg')
+
+
+			
+
+
+
