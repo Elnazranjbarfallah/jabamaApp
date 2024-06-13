@@ -57,3 +57,5 @@ class DataAccess:
         entity = session.get(self.class_name, renter_id)
         return entity
 
+
+

@@ -34,8 +34,8 @@ class RentBl:
             raise HouseNotFoundError()
 
     @staticmethod
-    def find_by_id(customer_id):
-        renter = rent_da.find_by_renter_id(customer_id)
+    def find_by_id(person_id):
+        renter = rent_da.find_by_renter_id(person_id)
         if renter:
             return renter
         else:

@@ -71,7 +71,7 @@ class Rent(Base):
     @renter_id.setter
     def renter_id(self, house_id):
         if re.match("^[0-9_ \s]+$", house_id):
-            self.house_id = renter_id
+            self.house_id = house_id
 
     @property
     def renter(self):

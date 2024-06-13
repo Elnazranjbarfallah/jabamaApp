@@ -1,5 +1,6 @@
 import re
 from model.entity import *
+from controller.house_controller import HouseController
 
 
 class House(Base):
@@ -137,7 +138,7 @@ class House(Base):
 
     @owner.setter
     def owner(self, owner):
-        if re.match(r"^[A-Za-z\s]+$", name, re.I):
+        if re.match(r"^[A-Za-z\s]+$",owner, re.I):
             self._owner = owner
         else:
             raise ValueError("invalid owner")

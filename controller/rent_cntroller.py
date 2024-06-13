@@ -12,8 +12,8 @@ class RentController:
     @staticmethod
     @exception_handling
     def edit(id, price, start_date_time, end_date_time, house , renter, status=True):
-        person = Rent(id, price, start_date_time, end_date_time, house , renter, status)
-        return True, RentBl.edit(person)
+        renter = Rent(id, price, start_date_time, end_date_time, house , renter, status)
+        return True, RentBl.edit(renter)
 
     @staticmethod
     @exception_handling
