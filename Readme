@@ -1,0 +1,29 @@
+ocumentation for the "Room We Rent" Project
+Last Edited: June 14th
+
+Project Introduction:
+
+The "Room We Rent" project, inspired by the renowned sites "Jabama" and "Otaghak," aims to provide users with a platform for renting rooms with various attractive features.
+ Our goal is to offer users a seamless and enjoyable experience by leveraging the latest technologies and best designs.
+
+Languages and Technologies Used:
+
+HTML: For structuring the content of web pages and creating the main framework of the site.
+CSS: For styling and beautifying web pages, creating attractive visual effects.
+Python: For server-side programming and business logic management.
+Sass: To enhance the efficiency and maintainability of CSS code with advanced features.
+Flask: For building server-side web applications with a simple and flexible structure.
+Key Features of the Site:
+
+Advanced Search: Users can find their desired room with preferred features using various filters.
+Detailed Profiles: Each room is displayed with complete descriptions, images, and available amenities.
+Development History:
+
+The "Room We Rent" project has gone through multiple development stages and received several updates to improve performance and add new features.
+The latest edit was made on June 14th, incorporating significant enhancements in the design and functionality of the site. It is worth mentioning that features such as online booking and reviews have not yet been implemented but will be completed in future updates.
+
+Project Creator:
+
+This project was created by Elnaz Ranjbar Fallah, under the supervision and guidance of Professor Seyed Ahmad Mesbah during the Tehran Technical Complex course. With their efforts and dedication, this project has achieved outstanding results.
+
+We hope that "Room We Rent" provides a pleasant and convenient experience for users and meets their diverse needs in the best possible way. We invite you to visit the site and share your valuable feedback with us.
