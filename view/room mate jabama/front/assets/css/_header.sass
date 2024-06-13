@@ -1,0 +1,111 @@
+header
+	width: 100%
+	height: 70px
+	+f-row-end()
+	position: absolute 
+	background: transparent
+	z-index: 2
+	padding: 10px
+	.container-header
+		+f-row()
+		width: 100vw
+		img
+			width: 115px
+			margin-top: 10px
+			margin-right: auto
+			z-index: 2
+		nav
+			margin-right: 20px
+			transition: all ease .3s
+			ul
+				+f-row-end()
+				li
+					margin-right: 10px
+					a
+						text-decoration: none
+						color: #FEFAE0
+						font-size: 0.7rem 
+						transition: all ease .8s
+						position: relative
+						letter-spacing: 2px
+						&::after
+							background: none repeat scroll 0 0 transparent
+							bottom: -6px
+							content: ""
+							display: block
+							height: 2px
+							left: 50%
+							z-index: 1
+							position: absolute
+							background: #FFFFFF
+							transition: width 0.3s ease 0s, left 0.3s ease 0s
+							width: 0%
+						&:hover
+							color: #B48246
+							&::after
+								width: 100%
+								left: 0
+								background: #B48246 
+		.toggle-dropdown
+			width: 30px
+			height: 30px
+			position: absolute
+			top: 10px
+			right: 20px
+			display: none
+			z-index: 1
+			cursor: pointer
+			color: #fff
+			i
+				width: 30px
+
+
+
+.no-active
+	display: none
+
+.active-nav
+	clip-path: circle(79% at 100% 0%) !important
+
+
+
+@media screen and (max-width: 480px)
+	header	
+		.container-header
+			img
+				margin-top: 10px
+				width: 100px
+				margin-left: 20px
+			nav
+				width: 100%
+				height: calc(100vh*0.90)
+				position: absolute
+				top: 0
+				right: 0
+				z-index: 1
+				background: #22223B
+				color: #F2E9E4
+				clip-path: circle(0% at 100% 0%)
+				margin-right: 0px
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: center
+				text-align: center
+				ul
+					+f-column-center()
+					margin: 30px 10px 10px 10px
+					li
+						margin: 5px
+						a
+							text-decoration: none
+							color: #F2E9E4
+			.toggle-dropdown
+				display: block
+
+
+
+
+
+
+/* clip-path: circle(76.9% at 85% 14%) */							
