@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap')
+
+@font-face 
+	font-family: 'Nexa'
+	src: url("./font/Nexa Bold.otf")
+
+
+@font-face 
+	font-family: 'Nexa-2'
+	src: url("./font/Nexa Light.otf")
+
+
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	list-style: none
+	text-decoration: none
+	font-family: 'Roboto', sans-serif
+	z-index: 1
+
+
+html
+	overflow-x: hidden
+	scroll-behavior: smooth
+
+
+.row-up
+	position: fixed
+	z-index: 3
+	bottom: 80px
+	right: 20px
+	left: calc(100vw*0.8)
+	width: 70px
+	height: 70px
+	border-radius: 50%
+	background: #4A4E69
+	transition: all ease .5s
+	+f-column-center()
+	cursor: pointer
+	div
+		i
+			color: #FFFFFF
+			font-weight: bold
+			font-size: 1.2rem
+
+
+.up-noActive
+	transform: scale(0.0)
+
+.up-active
+	animation: goup .5s linear !important
+	animation-direction: alternate-reverse
+	transition: all ease .5s linear
+
+
+@keyframes goup
+	0%
+		transform: scale(0.0)
+	50%
+		transform: scale(0.5)
+	100%
+		transform: scale(1)
+
